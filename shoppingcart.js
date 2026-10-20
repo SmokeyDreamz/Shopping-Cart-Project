@@ -65,6 +65,9 @@ confirmation = ""
 
 
 function shoppingCart(){
-    videogameitems.forEach((videogameitems) => console.log(videogameitems.name));
+    videogameitems.forEach((index, videogameitems) => console.log(`${index}-${videogameitems.name} : $${videogameitems.cost}`));
+/*     for (i = 1; i <= videogameitems.length; i++){
+        console.log(i + "-" + videogameitems.name + ":" + " " + "$" + videogameitems.cost);
+    } */
 }
 shoppingCart();

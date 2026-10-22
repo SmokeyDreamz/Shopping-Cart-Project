@@ -23,7 +23,7 @@ Shopping cart with add/remove buttons and total order price
 
 
 
-cart = []
+cart = {}
 videogameitems = [
     {name: "Huggy Wuggy Plushie", game: "Poppy's Playtime", gameType: "Horror", cost: 25},
     {name: "Granny's Bat", game: "Granny", gameType: "Horror", cost: 21},

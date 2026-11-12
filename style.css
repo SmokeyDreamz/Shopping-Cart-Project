@@ -10,19 +10,43 @@ body,
 }
 
 body {
-  background-color: #073d30;
+  background-color: #b3d9e6;
   font-family: "Patrick Hand", cursive;
   font-weight: 400;
   font-style: normal;
+}
 
-
+.hero{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  color: #6dd4ee;
+  background-image: linear-gradient(rgba(200, 200, 200, 0.8), rgbargba(200, 200, 200, 0.8)),
+  url();
+}
 
 
 .container{
-    height:100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card{
-    background-color: rgb(134, 118, 44);
-    height:
+    background-color: #206997;
+    height: 30rem;
+    width: 40rem;
+    margin: 4rem;
+    justify-items: center;
+}
+
+.card h2 {
+  font-size: 4rem;
+  color: #15264a;
+}
+
+.card p {
+  font-size: 2rem;
+  color:#5ae9fc;
 }

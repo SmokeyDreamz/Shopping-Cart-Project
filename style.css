@@ -23,7 +23,7 @@ body {
   height: 100vh;
   color: #6dd4ee;
   background-image: linear-gradient(rgba(6, 226, 189, 0.8), rgba(0, 66, 141, 0.8)),
-  url(images/contollersgif.gif);
+  url(contollersgif.gif);
 }
 
 
@@ -39,6 +39,9 @@ body {
     width: 40rem;
     margin: 4rem;
     justify-items: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .card h2 {
@@ -49,4 +52,9 @@ body {
 .card p {
   font-size: 2rem;
   color:#5ae9fc;
+}
+
+.card img {
+  height: 20rem;
+  width: 30rem;
 }

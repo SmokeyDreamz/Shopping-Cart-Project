@@ -5,6 +5,7 @@
     <title>Video Game Shop</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <section class="hero">
       <div class="hero-header">
@@ -15,7 +16,37 @@
         </p>
       </div>
     </section>
+
+    <h1 class="section-title">Browse Products</h1>
+
+    <section class="filters">
+      <button onclick="filterProducts('All')">All</button>
+      <button onclick="filterProducts('Horror')">Horror</button>
+      <button onclick="filterProducts('Shooter')">Shooter</button>
+      <button onclick="filterProducts('Sandbox')">Sandbox</button>
+      <button onclick="filterProducts('Action')">Action</button>
+      <button onclick="filterProducts('Platformer')">Platformer</button>
+      <button onclick="filterProducts('Mobile')">Mobile</button>
+      <button onclick="filterProducts('Puzzle')">Puzzle</button>
+      <button onclick="filterProducts('Mystery')">Mystery</button>
+      <button onclick="filterProducts('Racing')">Racing</button>
+      <button onclick="filterProducts('Strategy')">Strategy</button>
+      <button onclick="filterProducts('Survival')">Survival</button>
+      <button onclick="filterProducts('Fighting')">Fighting</button>
+    </section>
+
     <section class="container"></section>
+
+    <section class="shopping-cart"></section>
+
+    <section class="discount-section">
+      <h2>Discount Code</h2>
+      <input type="text" id="discount-code" placeholder="Enter code" />
+      <button onclick="applyDiscount()">Apply Code</button>
+      <p id="discount-message"></p>
+      <button onclick="checkout()">Checkout</button>
+    </section>
+    <div class="popup"></div>
     <script src="shoppingcart.js"></script>
   </body>
 </html>

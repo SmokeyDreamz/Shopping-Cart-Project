@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
-html,
-body,
-* {
+html, body, * {
   font-size: 10px;
   box-sizing: border-box;
   margin: 0;
@@ -12,22 +10,21 @@ body,
 body {
   background-color: #b3d9e6;
   font-family: "Patrick Hand", cursive;
-  font-weight: 400;
-  font-style: normal;
 }
 
-.hero{
+.hero {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 100vh;
   color: #6dd4ee;
-  background-image: linear-gradient(rgba(6, 226, 189, 0.8), rgba(0, 66, 141, 0.8)),
-  url(contollersgif.gif);
+  background-image: linear-gradient(rgba(6, 226, 189, 0.8), rgba(0, 66, 141, 0.8)), url("contollersgif.gif");
+  background-size: cover;
+  background-position: center;
 }
 
-.hero-header{
+.hero-header {
   width: 85rem;
   padding: 2rem;
 }
@@ -35,30 +32,58 @@ body {
 .hero h1 {
   font-size: 7rem;
   margin-bottom: 2rem;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .hero p {
   font-size: 2.4rem;
   margin-bottom: 3rem;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 1);
 }
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.section-title {
+  font-size: 4rem;
+  text-align: center;
+  margin: 3rem;
+  color: #15264a;
 }
 
-.card{
-    background-color: #206997;
-    height: 30rem;
-    width: 40rem;
-    margin: 4rem;
-    justify-items: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.filters button {
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  background-color: #206997;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #15264a;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #206997;
+  min-height: 30rem;
+  width: 40rem;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 1rem;
 }
 
 .card h2 {
@@ -67,17 +92,117 @@ body {
 }
 
 .card p {
-  font-size: 1.5rem;
-  color:#5ae9fc;
+  font-size: 1.8rem;
+  color: #5ae9fc;
 }
 
 .card img {
   height: 15rem;
   width: 25rem;
+  object-fit: contain;
 }
 
-.btn{
-  margin: 3rem;
+/* Add To Cart button */
+.btn {
+  margin: 2rem;
+  font-size: 1.8rem;
+  padding: 1rem 2.5rem;
+  background-color: #ff914d;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ff6b35;
+}
+
+.shopping-cart {
+  background-color: #206997;
+  color: white;
+  margin: 4rem;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.shopping-cart h2 {
+  font-size: 4rem;
+}
+
+.shopping-cart h3 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.cart-item p {
+  font-size: 2rem;
+}
+
+.cart-item button {
   font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 
+.discount-section {
+  text-align: center;
+  margin: 4rem;
+  padding: 3rem;
+  background-color: #15264a;
+  border-radius: 1rem;
+  color: white;
+}
+
+.discount-section h2 {
+  font-size: 3rem;
+}
+
+.discount-section input {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.discount-section button {
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.discount-section p {
+  font-size: 2rem;
+  margin: 1rem;
+  color: #5ae9fc;
+}
+
+.out-of-stock {
+  color: #ff0000 !important;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 2rem;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #033655;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 20px;
+  font-size: 2rem;
+}
+
+.popup.show {
+  display: block;
+}
